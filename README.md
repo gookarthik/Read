@@ -5,8 +5,7 @@ Documentation for Bulk-api-v2 setup instructions in Linux
 
 - JDK 
 - Apache Tomcat
-- postgreSQL
-- pgAdmin4
+- PostgreSQL
 - Spring Tool Suite 3.9.6
 - Maven 3.3.X
 
@@ -43,7 +42,7 @@ Download and Install Apache Tomact
 -  Now Open Chrome and type http://localhost:8080/ to open Tomcat home Page, this verifies Tomcat is running successfully in our machine.
 --------------------------------------------------------------------------------------------------------------------------------------
 
-Download And Install PostgresSQL Linux
+Download And Install PostgreSQL Linux
 -
 PgSQL is a procedural programming language supported by the PostgreSQL ORDBMS. Installation is shown, give each command in terminal and press enter.
 ```
@@ -52,102 +51,49 @@ $ ls /etc/postgresql/10/main
 $ service postgresql status
 $ sudo su postgres
 $ psql
+$ bash-4.4# psql -U postgres
+postgres=#
 ```
 
-Download And Install pgAdmin4 for Linux
--
-
-Give below each commands in terminal 
-```
-  $ sudo apt-get install python2.7-dev virtualenv python-pip libpq-dev
-  $ mkdir -p pgadmin4
-  $ cd pgadmin4
-  $ virtualenv venv -p /usr/bin/python2.7
-  $ source ./venv/bin/activate
-  $ wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v3.3/pip/pgadmin4-3.3-py2.py3-none-any.whl
-  $ sudo pip install pgadmin4-3.3-py2.py3-none-any.whl
-  $ cp ./venv/lib/python2.7/site-packages/pgadmin4/config.py ./venv/lib/python2.7/site-packages/pgadmin4/config_local.py
-   (If there is no pgadmin4 file, copy and paste from pgadmin4-3.3-py2.py3-none-any.whl to site-packages)
-  $ sudo python ./venv/lib/python2.7/site-packages/pgadmin4/pgAdmin4.py
-  Starting pgAdmin 4. Please navigate to http://127.0.0.1:5050 in your browser.
-  ```
-
-Open pgAdmin4 in Ubuntu
--
-  Note: To Connect to localhost, first we have to connect pgsql to localhost(psql -h localhost  -p 5432 -U postgres  in terminal), only then we can create and connect to server in pgAdmin4
-
-
-  - Open pgAdmin4 in port 5050 with link as http://localhost:5050/browser/ 
-
-  - Set the server, for this, right click on server, create and server a pop-up window will open
-     In general give name as pgsql
-     In connection give host name as localhost, then username as postgres password as postgres then save   
-     
   To Create Database
   -
-  
-  - Right click on Database which is below Server then Create and Database, pop-up window will appear
-  - Give Database name as bulkdata and press OK. 
-
-
-
+  - Give below command to create database in terminal
+  ```
+  For Bulk Data
+  postgres=# CREATE DATABASE bulkdata;
+  ```
   To connect to our Database
   -
-  - click on pgsql which is below the server if server is connected
-  - click on bulkdata
-  - click on schemas
-  - click on public
-  - click on tables
-
-To Download pgadmin3
--
-  Give the below command in Terminal and enter, it installs the pgadmin3
   ```
-  $ sudo apt-get install pgadmin3
-  ```
-  Next Open pgadmin3 here we have to set Server first
-  To Add Server
-  -
-  - Go to file on top left corner of pgadmin3, then choose Add Server, a pop up window opens, give as below
-
-    In Properties
-    Name   			               psql
-    Host   			               localhost   or 127.0.0.1
-    Port    		            	 5432
-    Service
-    Maintenance Database		   postgres    
-    User Name     		         postgres
-    Password      	           postgres
-    Store Password   	       	Check
-    Give OK,, Again Ok for another window as well
-
-
+  For Bulk Data
+  postgres=# \c bulkdata
+   ```
   To import Database
   -
-  First Select Database to import its sql file, then go to plugin in menu bar click PSQL Console and give below command in terminal
+  - Give below command to create database in terminal
   ```
-  bulkdata=# \i Downloads/export_30-03-2018.sql  
+  For Bulk Data
+  postgres=#psql -U username dbname < bulkdata.pgsql
   ```
-  ( Here after \i , that is the path of export_30-03-2018.sql file )
-  - It imports Database in to project bulkdata.
-
 --------------------------------------------------------------------------------------------------------------------------------------
 Load DSTU2 schema and data
 -
 - To create database hapi
-- Right click on Database which is below Server then Create and Database, pop-up window will appear
-- Give Database name as hapi and press OK.
-
+  ```
+  postgres=# CREATE DATABASE hapi;
+  ```
+- To connect to database hapi
+  ```
+  postgres=# \c hapi
+  ```
 To import Database hapi
--
+
 - DSTU2 database file “hapi-server.backup” is located under root directory. Load schema and sample data using psql command
 - First Select Database to import its sql file, then go to plugin in menu bar click PSQL Console and give below command in terminal
+- Give below command to create database in terminal
   ```
-  hapi=# \i Downloads/hapi-server.backup  
+  postgres=#psql -U username dbname < hapi-server.backup
   ```
-  ( Here after \i , that is the path of hapi-server.backup file )
-  - It imports Database hapi.
-
 Clone FHIR Server repository
 -
 Clone FHIR Server repository using command
@@ -197,7 +143,7 @@ Spring Tool Suite Installation
    Client Registration
    --
 
-   -  After running above project, we have to do client registration with local url http://localhost:8080/bulk-data-api/view/clients.html  with following details
+   -  Once project is running, we have to do client registration with local url http://localhost:8080/bulk-data-api/view/clients.html  with following details
     - Registring New Client 
 	     ```
 	      UserName 	   abc123
@@ -205,7 +151,7 @@ Spring Tool Suite Installation
 	      Full Name         abcdefg
 	      Password 	   abcxyz
 	     ```
--  Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
+-  Then click OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
 	```
 	Backend Client Registration
 		Client App Name       bulk data api
