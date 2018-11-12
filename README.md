@@ -189,25 +189,25 @@ Spring Tool Suite Installation
    Client Registration
    --
 
-    -  After running above project, we have to do client registration with local url http://localhost:8080/bulk-data-api/view/clients.html  with following details
+   -  After running above project, we have to do client registration with local url http://localhost:8080/bulk-data-api/view/clients.html  with following details
     - Registring New Client 
-    ```
-      UserName 	abc123
-      Email    	abc123@gmail.com
-      Full Name 	abcdefg
-      Password 	abcxyz
-    ```
-    -  Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
-    ```
-    Backend Client Registration
-      Client App Name       bulk data api
-      Organization	      Xyram
-      Client Issuer URL     http://localhost:8080/bulk-data-api/
-      Public Key            Upload Public Key
-      Scope		      Check both system and user	
-    ```
+	     ```
+	      UserName 	   abc123
+	      Email    	   abc123@gmail.com
+	      Full Name    abcdefg
+	      Password 	   abcxyz
+	     ```
+     Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
+	    ```
+	    Backend Client Registration
+	      Client App Name       bulk data api
+	      Organization	      Xyram
+	      Client Issuer URL     http://localhost:8080/bulk-data-api/
+	      Public Key            Upload Public Key
+	      Scope		      Check both system and user	
+	    ```
 
-    - After registration it generate ClientID and token URL as follows
+   - After registration it generate ClientID and token URL as follows
     ```
     Client ID :     bulk data apiVxAHtrAqt1
     Token URL :  http://localhost:8080/bulk-data-api/token
