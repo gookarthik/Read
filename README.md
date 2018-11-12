@@ -82,14 +82,13 @@ Open pgAdmin4 in Ubuntu
   - Set the server, for this, right click on server, create and server a pop-up window will open
      In general give name as pgsql
      In connection give host name as localhost, then username as postgres password as postgres then save   
-  To Create Database
-  - Right click on Database which is below Server then Create and Database, pop-up window will appear
-  - Give Database name as bulkdata and press OK. 
-  
+     
   To Create Database
   -
+  
   - Right click on Database which is below Server then Create and Database, pop-up window will appear
   - Give Database name as bulkdata and press OK. 
+
 
 
   To connect to our Database
