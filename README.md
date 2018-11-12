@@ -25,8 +25,8 @@ $ sudo apt-get update
 $ sudo apt-get install oracle-java8-installer
 ```
 
-	Verifying jdk installation
-	-
+Verifying jdk installation
+-
 	To verify installation give this
   ```
   <<java installed dir>>java -version
@@ -179,15 +179,15 @@ Spring Tool Suite Installation
   --
   -  In STS, Click on File in menu bar, click on import then in Maven Projects, click on Existing Maven Projects. Click on Next. Pop-up 	window appears, Click on browse and search the path of bulk-api-v2 project and finally finish
 
-    To Run Bulk-api-v2 Project
-    --
+   To Run Bulk-api-v2 Project
+   --
 
     - Right Click on bulk-api-v2 then Click Run AS and Run on Server, a pop-up window opens
     - Select Pivotal or Apache Tomcat Server then Finish
     - Output is shown in console output with local url http://localhost:8080/bulk-data-api/ 
 
-    Client Registration
-    --
+   Client Registration
+   --
 
     -  After running above project, we have to do client registration with local url http://localhost:8080/bulk-data-api/view/clients.html  with following details
     - Registring New Client 
