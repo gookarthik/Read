@@ -197,8 +197,7 @@ Spring Tool Suite Installation
 	      Full Name    abcdefg
 	      Password 	   abcxyz
 	     ```
-	     - Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
-        	-  Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
+-  Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
 	```
 	Backend Client Registration
 		Client App Name       bulk data api
@@ -206,11 +205,9 @@ Spring Tool Suite Installation
 		Client Issuer URL     http://localhost:8080/bulk-data-api/
 		Public Key            Upload Public Key
 		Scope		      Check both system and user	
-	```		
+	```
 
-   - After registration it generate ClientID and token URL as follows
-   
-	    ```
-	    Client ID :     bulk data apiVxAHtrAqt1
-	    Token URL :  http://localhost:8080/bulk-data-api/token
-	    ```
+	- After registration it generate ClientID and token URL as follows
+	```
+	Client ID :     bulk data apiVxAHtrAqt1
+	Token URL :  http://localhost:8080/bulk-data-api/token
