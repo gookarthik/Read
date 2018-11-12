@@ -201,8 +201,7 @@ Spring Tool Suite Installation
    - Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
         			```
 			    Backend Client Registration
-			    
-		      Client App Name       bulk data api
+ 		      Client App Name       bulk data api
 		      Organization	    Xyram
 		      Client Issuer URL     http://localhost:8080/bulk-data-api/
 		      Public Key            Upload Public Key
