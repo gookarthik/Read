@@ -126,10 +126,6 @@ To Download pgadmin3
   - It imports Database in to project bulkdata.
 
 --------------------------------------------------------------------------------------------------------------------------------------
-
-To Import Database into pgAdmin4
--
-
 Load DSTU2 schema and data
 -
 Create the database by running the below command in command prompt
