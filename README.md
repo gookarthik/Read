@@ -193,8 +193,8 @@ Spring Tool Suite Installation
     - Registring New Client 
 	     ```
 	      UserName 	   abc123
-	      Email    	  	 abc123@gmail.com
-	      Full Name    abcdefg
+	      Email    	   abc123@gmail.com
+	      Full Name       abcdefg
 	      Password 	   abcxyz
 	     ```
 -  Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
