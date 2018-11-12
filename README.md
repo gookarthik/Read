@@ -85,8 +85,15 @@ Open pgAdmin4 in Ubuntu
   To Create Database
   - Right click on Database which is below Server then Create and Database, pop-up window will appear
   - Give Database name as bulkdata and press OK. 
+  
+  To Create Database
+  -
+  - Right click on Database which is below Server then Create and Database, pop-up window will appear
+  - Give Database name as bulkdata and press OK. 
+
 
   To connect to our Database
+  -
   - click on pgsql which is below the server if server is connected
   - click on bulkdata
   - click on schemas
