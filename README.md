@@ -29,7 +29,7 @@ Verifying jdk installation
 -
 To verify installation give this
   ```
-  <<java installed dir>>java -version
+  $ java -version
   ```
 
 Download and Install Apache Tomact 
