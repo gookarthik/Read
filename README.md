@@ -135,14 +135,20 @@ To Download pgadmin3
 --------------------------------------------------------------------------------------------------------------------------------------
 Load DSTU2 schema and data
 -
-Create the database by running the below command in command prompt
-```
-	$ createdb -h localhost -p 5432 -U postgres hapi
-```
-DSTU2 database file “hapi-server.backup” is located under root directory. Load schema and sample data using psql command
-```
-	$ psql -U postgres -d hapi -f hapi-server.backup
-```
+- To create database hapi
+- Right click on Database which is below Server then Create and Database, pop-up window will appear
+- Give Database name as hapi and press OK.
+
+To import Database hapi
+-
+- DSTU2 database file “hapi-server.backup” is located under root directory. Load schema and sample data using psql command
+- First Select Database to import its sql file, then go to plugin in menu bar click PSQL Console and give below command in terminal
+  ```
+  hapi=# \i Downloads/hapi-server.backup  
+  ```
+  ( Here after \i , that is the path of hapi-server.backup file )
+  - It imports Database hapi.
+
 Clone FHIR Server repository
 -
 Clone FHIR Server repository using command
