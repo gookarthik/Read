@@ -199,7 +199,7 @@ Spring Tool Suite Installation
 	     ```
      Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
 	    ```
-	    Backend Client Registration
+	      Backend Client Registration
 	      Client App Name       bulk data api
 	      Organization	      Xyram
 	      Client Issuer URL     http://localhost:8080/bulk-data-api/
@@ -208,6 +208,7 @@ Spring Tool Suite Installation
 	    ```
 
    - After registration it generate ClientID and token URL as follows
+   
     ```
     Client ID :     bulk data apiVxAHtrAqt1
     Token URL :  http://localhost:8080/bulk-data-api/token
