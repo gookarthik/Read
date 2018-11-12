@@ -193,7 +193,7 @@ Spring Tool Suite Installation
     - Registring New Client 
 	     ```
 	      UserName 	   abc123
-	      Email    	   abc123@gmail.com
+	      Email    	  	 abc123@gmail.com
 	      Full Name    abcdefg
 	      Password 	   abcxyz
 	     ```
