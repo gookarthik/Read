@@ -1,4 +1,4 @@
-Documentation for Bulk-api-v2 setup instructions in Windows
+Documentation for Bulk-api-v2 setup instructions in Linux
 -
 
 ### Prerequisites
