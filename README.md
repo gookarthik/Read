@@ -26,14 +26,14 @@ $ sudo apt-get install oracle-java8-installer
 
 Verifying jdk installation
 -
-To verify installation give this
+To verify installation of java, give this
   ```
   $ java -version
   ```
 
 Download and Install Apache Tomact 
 -
-  Open the Web browser say Chrome to download Apache Tomcat 8 with link given below	
+-  Open the Web browser download Apache Tomcat 8 
 - Download the tar.gz file of Apache tomact with this link https://tomcat.apache.org/download-80.cgi#8.0.53 
 - Extract Tomcat downloaded file, Open Extracted file, open bin, and locate the bin path of this file in terminal.
 ```
@@ -104,8 +104,7 @@ $ git clone https://github.com/siteadmin/fhir-tools.git
 Spring Tool Suite Installation
 -
 
-  Download STS for Linux or Windows from below link
-  - https://spring.io/tools3/sts/all (Download From this)
+  - Download STS for Linux or Windows from below link https://spring.io/tools3/sts/all 
   - Go to Downloads, then Unzip, spring-tool-suite-3.9.6.RELEASE-e4.9.0-win32-x86_64.zip, and now STS is ready to use
   To Open STS
   - Go to Downloads , then open sts-3.9.6.RELEASE , then double click on STS.exe
@@ -121,7 +120,7 @@ Spring Tool Suite Installation
   To Add Server in STS
   --
 
-  - In Quick Access Type Server and enter
+   - In Quick Access Type Server and enter
     - Right Click on blank white space, Then New , and Server
     - If we don't find Tomcat Server then follow below steps
       - Go to Help in menu bar click on Eclipse Market Place
@@ -136,7 +135,7 @@ Spring Tool Suite Installation
    To Run Bulk-api-v2 Project
    --
 
-    - Right Click on bulk-api-v2 then Click Run AS and Run on Server, a pop-up window opens
+   - Right Click on bulk-api-v2 then Click Run AS and Run on Server, a pop-up window opens
     - Select Pivotal or Apache Tomcat Server then Finish
     - Output is shown in console output with local url http://localhost:8080/bulk-data-api/ 
 
@@ -161,7 +160,7 @@ Spring Tool Suite Installation
 		Scope		      Check both system and user	
 	```
 
-	- After registration it generate ClientID and token URL as follows
+	- After registration, it generate ClientID and token URL as follows
 	```
 	Client ID :     bulk data apiVxAHtrAqt1
 	Token URL :  http://localhost:8080/bulk-data-api/token
