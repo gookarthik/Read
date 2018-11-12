@@ -36,6 +36,12 @@ Download and Install Apache Tomact
 -  Open the Web browser download Apache Tomcat 8 
 - Download the tar.gz file of Apache tomact with this link https://tomcat.apache.org/download-80.cgi#8.0.53 
 - Extract Tomcat downloaded file, Open Extracted file, open bin, and locate the bin path of this file in terminal.
+- Add below two lines in Server.xml which is in conf file of Apache Tomcat Folder
+```
+	<Context path="/open" docBase="./fhirserver"/>
+        <Context path="/secure" docBase="./fhirserver"/>
+```
+- Locate the bin path of Apache Tomcat file in terminal.
 ```
 <<apache installed dir>>/apache-tomcat-8.0.53/bin$ ./startup.sh
 ```
