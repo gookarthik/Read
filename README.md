@@ -197,7 +197,8 @@ Spring Tool Suite Installation
 	      Full Name    abcdefg
 	      Password 	   abcxyz
 	     ```
-     Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
+    
+   - Then give OK, inside this another web page opens, click on Register Backend Client with public der file, check for both system and user.
      
 		    ```
 			    Backend Client Registration
