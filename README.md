@@ -27,7 +27,7 @@ $ sudo apt-get install oracle-java8-installer
 
 Verifying jdk installation
 -
-	To verify installation give this
+To verify installation give this
   ```
   <<java installed dir>>java -version
   ```
